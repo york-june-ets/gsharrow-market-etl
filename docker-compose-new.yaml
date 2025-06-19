@@ -2,11 +2,11 @@ version: "3.8"
 services:
   db:
     image: postgres:latest
-    container_name: new-pagila-db
+    container_name: market-pagila-db
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     ports:
-      - "5435:5432"
+      - "5436:5432"
